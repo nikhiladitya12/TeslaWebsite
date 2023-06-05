@@ -1,0 +1,661 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background-color:transparent ;
+    
+}
+
+#main{
+width:100%;
+position: absolute;
+}
+
+ #main #page1{
+position: relative;
+    width:100%;
+    height:100vh;
+}
+
+ #page1 #nav {
+    width:calc(100% - 20px);
+    height:7vh;
+position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 10px;
+padding-left: 10px;
+z-index: 9999;
+}
+
+#nav #subnav2{
+    display: flex;
+    gap:20px;
+}
+
+#nav #subnav3{
+    display: flex;
+    gap:20px;
+}
+
+#nav #subnav1 img{
+    width:150px;
+
+}
+
+#nav #subnav2>a{
+    font-size: 13px;;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+#nav #subnav3>a{
+    font-size: 13px;;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration:none ;
+}
+
+#page1>video{
+    width:100%;
+    size: 100%;
+}
+
+#page1 #topcenter{
+    position: absolute;
+    top:12%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#topcenter >h2{
+    font-size:40px ;
+    font-weight: 300;
+     color: rgb(255, 255, 255);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#topcenter >p{
+    font-size:14px ;
+    font-weight: 300;
+     color: rgb(255, 255, 255);
+     font-family: sans-serif;
+}
+
+#page1 button{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:6px 70px;
+    background-color:transparent ;
+    border-color:  rgb(255, 255, 255);
+    border-radius:5px;
+}
+
+button >p{
+    color: rgb(255, 255, 255);
+}
+
+#page2{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD);
+    background-size:cover;
+background-position: center;
+}
+
+#page2 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page2 #topcenter >h2{
+    font-size:40px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page2 #topcenter > a >p {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+#page2 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+    opacity: 0.8;
+}
+
+#page2 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page2 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    backdrop-filter: 8px;
+    padding: 10px 90px; 
+    border-radius: 5px;
+}
+
+#page2 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page2 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page2 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page2 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    
+    text-align: center;
+}
+
+#page3{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop);
+    background-size:cover;
+background-position: center;
+}
+
+#page3 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page3 #topcenter >h2{
+    font-size:40px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page3 #topcenter > a >p {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+#page3 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+}
+
+#page3 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page3 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    backdrop-filter: 8px;
+    padding: 10px 90px;  
+    border-radius: 5px;
+}
+
+#page3 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page3 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page3 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page3 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    text-align: center;
+}
+
+#page4{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop);
+    background-size:cover;
+background-position: center;
+}
+
+#page4 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page4 #topcenter >h2{
+    font-size:40px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page4 #topcenter > a >p {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+#page4 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+}
+
+#page4 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page4 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    backdrop-filter: 8px;
+    padding: 10px 90px; 
+    border-radius: 5px;
+}
+
+#page4 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page4 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page4 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page4 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    text-align: center;
+}
+
+#page5{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD);
+    background-size:cover;
+background-position: center;
+}
+
+#page5 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page5 #topcenter >h2{
+    font-size:40px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page5 #topcenter > a >p {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+#page5 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%)rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+}
+
+#page5 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page5 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    backdrop-filter: 8px;
+    padding: 10px 90px; 
+    border-radius: 5px;
+}
+
+#page5 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page5 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page5 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page5 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    text-align: center;
+}
+
+#page6{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/425_HP_SolarPanels_D);
+    background-size:cover;
+background-position: center;
+}
+
+
+#page6 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page6 #topcenter >h2{
+    font-size:34px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page6 #topcenter p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: rgb(1, 5, 43);
+}
+
+#page6 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+}
+
+#page6 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page6 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    backdrop-filter: 8px;
+    padding: 10px 90px; 
+    border-radius: 5px;
+}
+
+#page6 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page6 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page6 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page6 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    text-align: center;
+}
+
+#page7{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-SolarRoof-Desktop-Global);
+    background-size:cover;
+background-position: center;
+}
+
+#page7 #topcenter{
+    position: absolute;
+    top:13%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page7 #topcenter >h2{
+    font-size:34px ;
+    font-weight: 300;
+     color: rgb(1, 5, 43);
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+
+#page7 #topcenter p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: rgb(1, 5, 43);
+}
+
+#page7 #topbottomcenter {
+    position: absolute;
+    top:82%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-360deg);
+    display:flex;
+    gap:15px ;
+    align-items: center;
+}
+
+#page7 #topbottomcenter #left {
+    background-color: rgba(23, 26, 32, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page7 #topbottomcenter #right{
+    background-color:rgba(244, 244, 244, 0.65);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+
+}
+
+#page7 #topbottomcenter #left > a  {
+    text-decoration:none ;
+} 
+
+#page7 #topbottomcenter #right > a{
+    text-decoration:none ;
+}
+
+#page7 #topbottomcenter #left > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(223, 228, 234);
+    text-align: center;
+}
+
+#page7 #topbottomcenter #right > a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(5, 5, 6);
+    text-align: center;
+}
+
+#page8{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_Accessories);
+    background-size:cover;
+background-position: center;
+text-align: center;
+}
+
+
+#page8 #topcenter{
+    position: absolute;
+    top:18%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#page8 #topcenter >h2{
+    font-size:38px ;
+    font-weight: 500;
+     color: #171A20;
+     font-family: sans-serif;
+     margin-bottom: 5px;
+}
+#page8  #bottomcenter{
+    position: absolute;
+    top:84%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 90px; 
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+}
+
+#page8 #bottomcenter >a{
+    text-decoration: none;
+}
+#page8 #bottomcenter >a >p{
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#page8  #bottominfo{
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+#page8 #bottominfo >a{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(12, 10, 10);
+    font-family: sans-serif;
+    text-decoration:none ;
+}
+
+#page1 >h1{
+    font-size: 250px;
+    color: rgba(109, 107, 107, 0.737);
+    position:absolute;
+    top:40%;
+left:50%;
+transform: translate(-50%,-50%);
+font-family: "tesla";
+}
